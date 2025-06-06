@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Блог</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer="defer" src="./bundle.js"></script>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="./"><img src="./images/logo.svg" /></a>
+        </div>
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="./health-risk-map.html"
+                >О карте рисков</a
+              >
+            </li>
+            <li>
+              <a class="header__link" href="./longevity-science.html"
+                >longevity science</a
+              >
+            </li>
+            <li><a class="header__link active" href="./blog.html">Блог</a></li>
+            <li>
+              <a class="header__link" href="./payment-and-return.html"
+                >оплата и возврат</a
+              >
+            </li>
+            <li><a class="header__link" href="./faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="hide-on-desktop button button--burger">
+          <img
+            class="button__icon"
+            src="./images/burger-icon.svg"
+            width="33px"
+            height="33px"
+          />
+        </button>
+        <button
+          class="hide-on-mobile button button--assistant"
+          data-button="assistanse"
+        >
+          <span class="button__title">ИИ-Ассистент</span>
+          <img class="button__icon" src="./images/assistant-icon.svg" />
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__header">
+          <button class="hide-on-desktop button button--rounded button--burger">
+            <img class="button__icon" src="./images/close-icon.svg" />
+          </button>
+        </div>
+        <ul class="mobile-menu__menu">
+          <li>
+            <a class="mobile-menu__link" href="./health-risk-map.html"
+              ><span class="mobile-menu__link-title">О карте рисков</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./longevity-science.html'"
+              ><span class="mobile-menu__link-title">longevity science</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./blog.html"
+              ><span class="mobile-menu__link-title">Блог</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./payment-and-return.html"
+              ><span class="mobile-menu__link-title">оплата и возврат</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./faq.html"
+              ><span class="mobile-menu__link-title">FAQ</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container breadcrumbs">
+          <a href="./" class="breadcrumbs__item">Главная</a>
+          <span class="breadcrumbs__item active">Блог</span>
+        </div>
+      </section>
+      <section class="section blog-main section--padding-bottom-md">
+        <div class="container blog-main__container">
+          <h2 class="title-h2-2 blog-main__title">БЛОГ</h2>
+          <div class="blog-main__tabs-container">
+            <div class="blog-main__tabs">
+              <div class="blog-main__tab" data-show="article">
+                <span class="blog-main__tab-title">статьи</span>
+                <span class="blog-main__tab-icon"></span>
+              </div>
+              <div class="blog-main__tab" data-show="video">
+                <span class="blog-main__tab-title">ВИДЕО-БЛОГ</span>
+                <span class="blog-main__tab-icon"></span>
+              </div>
+            </div>
+            <div class="blog-main__tab-content" data-content="article">
+              <div class="blog-main__article-item">
+                <div class="blog-main__article-poster">
+                  <img
+                    src="./images/blog-article-poster-1.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="blog-main__article-description">
+                  <div class="blog-main__article-date">
+                    <span class="blog-main__article-date-title"
+                      >Дата публикации</span
+                    >
+                    <span class="blog-main__article-date-value"
+                      >01.04.2025</span
+                    >
+                  </div>
+                  <div class="blog-main__article-title">
+                    Как современные достижения продлевают нашу жизнь
+                  </div>
+                  <div class="blog-main__article-info">
+                    Исследования, технологии и стратегии для улучшения качества
+                    жизни и увеличения ее продолжительности
+                  </div>
+                  <div class="blog-main__article-button">
+                    <a href="./blog-article.html" class="button button--inline"
+                      ><span class="button__title">Читать далее</span>
+                      <div class="button__icon"></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-main__article-item">
+                <div class="blog-main__article-poster">
+                  <img
+                    src="./images/blog-article-poster-2.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="blog-main__article-description">
+                  <div class="blog-main__article-date">
+                    <span class="blog-main__article-date-title"
+                      >Дата публикации</span
+                    >
+                    <span class="blog-main__article-date-value"
+                      >01.04.2025</span
+                    >
+                  </div>
+                  <div class="blog-main__article-title">
+                    БАДы: Мифы и реальность
+                  </div>
+                  <div class="blog-main__article-info">
+                    Как биологически активные добавки влияют на здоровье и что
+                    нужно знать перед их использованием
+                  </div>
+                  <div class="blog-main__article-button">
+                    <a href="./blog-article.html" class="button button--inline"
+                      ><span class="button__title">Читать далее</span>
+                      <div class="button__icon"></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-main__article-item">
+                <div class="blog-main__article-poster">
+                  <img
+                    src="./images/blog-article-poster-3.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="blog-main__article-description">
+                  <div class="blog-main__article-date">
+                    <span class="blog-main__article-date-title"
+                      >Дата публикации</span
+                    >
+                    <span class="blog-main__article-date-value"
+                      >01.04.2025</span
+                    >
+                  </div>
+                  <div class="blog-main__article-title">
+                    Тайны болезней: как наше тело сигнализирует о проблемах
+                  </div>
+                  <div class="blog-main__article-info">
+                    Заболевания — это не только медицинские термины и диагнозы,
+                    но и важные сигналы, которые наше тело посылает нам.
+                    Понимание этих сигналов может помочь в ранней диагностике и
+                    лечении различных недугов.
+                  </div>
+                  <div class="blog-main__article-button">
+                    <a href="./blog-article.html" class="button button--inline"
+                      ><span class="button__title">Читать далее</span>
+                      <div class="button__icon"></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-main__article-item">
+                <div class="blog-main__article-poster">
+                  <img
+                    src="./images/blog-article-poster-4.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="blog-main__article-description">
+                  <div class="blog-main__article-date">
+                    <span class="blog-main__article-date-title"
+                      >Дата публикации</span
+                    >
+                    <span class="blog-main__article-date-value"
+                      >01.04.2025</span
+                    >
+                  </div>
+                  <div class="blog-main__article-title">
+                    Структура, Функции и Роль ДНК в Современной Генетике
+                  </div>
+                  <div class="blog-main__article-info">
+                    Дезоксирибонуклеиновая кислота (ДНК) является основным
+                    носителем генетической информации в клетках всех живых
+                    организмов.
+                  </div>
+                  <div class="blog-main__article-button">
+                    <a href="./blog-article.html" class="button button--inline"
+                      ><span class="button__title">Читать далее</span>
+                      <div class="button__icon"></div
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-main__tab-content" data-content="video">
+              <div class="blog-main__video-item">
+                <div class="blog-main__video-wrapper video">
+                  <iframe
+                    src=""
+                    width="100%"
+                    height="100%"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div
+                    class="video__overlay video__overlay--poster"
+                    style="background-image: url('./images/poster.png')"
+                  ></div>
+                  <div class="video__overlay video__overlay--source">
+                    <div class="video__source-container">
+                      <p class="video__source-title">
+                        Выберите источник для воспроизведения видео:
+                      </p>
+                      <div class="video__source-items">
+                        <div
+                          class="video__source-item"
+                          data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                        >
+                          <img
+                            src="./images/rutube-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title">RuTube</span>
+                        </div>
+                        <div
+                          class="video__source-item"
+                          data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                        >
+                          <img
+                            src="./images/vkvideo-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title"
+                            >VkВидео</span
+                          >
+                        </div>
+                        <div
+                          class="video__source-item"
+                          data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                        >
+                          <img
+                            src="./images/youtube-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title"
+                            >YouTube</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video__overlay video__overlay--play">
+                    <div class="video__play-btn"></div>
+                  </div>
+                </div>
+                <div class="blog-main__video-description">
+                  <a href="./blog-video.html" class="blog-main__video-title"
+                    >Старение это болезнь и ее можно лечить! Как остановить
+                    старение? Биолог - Алексей Москалев</a
+                  >
+                  <div class="blog-main__video-info">
+                    Хочется как можно дольше оставаться молодым и здоровым. Но
+                    почему наш организм стареет, и можно ли остановить или хотя
+                    бы замедлить этот процесс?
+                  </div>
+                  <div class="blog-main__video-source">
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >YouTube</span
+                      >
+                    </div>
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >RuTube</span
+                      >
+                    </div>
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >VK видео</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-main__video-item">
+                <div class="blog-main__video-wrapper video">
+                  <iframe
+                    src=""
+                    width="100%"
+                    height="100%"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div
+                    class="video__overlay video__overlay--poster"
+                    style="background-image: url('./images/poster.png')"
+                  ></div>
+                  <div class="video__overlay video__overlay--source">
+                    <div class="video__source-container">
+                      <p class="video__source-title">
+                        Выберите источник для воспроизведения видео:
+                      </p>
+                      <div class="video__source-items">
+                        <div
+                          class="video__source-item"
+                          data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                        >
+                          <img
+                            src="./images/rutube-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title">RuTube</span>
+                        </div>
+                        <div
+                          class="video__source-item"
+                          data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                        >
+                          <img
+                            src="./images/vkvideo-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title"
+                            >VkВидео</span
+                          >
+                        </div>
+                        <div
+                          class="video__source-item"
+                          data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                        >
+                          <img
+                            src="./images/youtube-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title"
+                            >YouTube</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video__overlay video__overlay--play">
+                    <div class="video__play-btn"></div>
+                  </div>
+                </div>
+                <div class="blog-main__video-description">
+                  <a href="./blog-video.html" class="blog-main__video-title"
+                    >Старение это болезнь и ее можно лечить! Как остановить
+                    старение? Биолог - Алексей Москалев</a
+                  >
+                  <div class="blog-main__video-info">
+                    Хочется как можно дольше оставаться молодым и здоровым. Но
+                    почему наш организм стареет, и можно ли остановить или хотя
+                    бы замедлить этот процесс?
+                  </div>
+                  <div class="blog-main__video-source">
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >YouTube</span
+                      >
+                    </div>
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >RuTube</span
+                      >
+                    </div>
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >VK видео</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-main__video-item">
+                <div class="blog-main__video-wrapper video">
+                  <iframe
+                    src=""
+                    width="100%"
+                    height="100%"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                    frameborder="0"
+                    allowfullscreen
+                  ></iframe>
+                  <div
+                    class="video__overlay video__overlay--poster"
+                    style="background-image: url('./images/poster.png')"
+                  ></div>
+                  <div class="video__overlay video__overlay--source">
+                    <div class="video__source-container">
+                      <p class="video__source-title">
+                        Выберите источник для воспроизведения видео:
+                      </p>
+                      <div class="video__source-items">
+                        <div
+                          class="video__source-item"
+                          data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                        >
+                          <img
+                            src="./images/rutube-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title">RuTube</span>
+                        </div>
+                        <div
+                          class="video__source-item"
+                          data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                        >
+                          <img
+                            src="./images/vkvideo-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title"
+                            >VkВидео</span
+                          >
+                        </div>
+                        <div
+                          class="video__source-item"
+                          data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                        >
+                          <img
+                            src="./images/youtube-icon.svg"
+                            class="video__source-item-icon"
+                          /><span class="video__source-item-title"
+                            >YouTube</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="video__overlay video__overlay--play">
+                    <div class="video__play-btn"></div>
+                  </div>
+                </div>
+                <div class="blog-main__video-description">
+                  <a href="./blog-video.html" class="blog-main__video-title"
+                    >Старение это болезнь и ее можно лечить! Как остановить
+                    старение? Биолог - Алексей Москалев</a
+                  >
+                  <div class="blog-main__video-info">
+                    Хочется как можно дольше оставаться молодым и здоровым. Но
+                    почему наш организм стареет, и можно ли остановить или хотя
+                    бы замедлить этот процесс?
+                  </div>
+                  <div class="blog-main__video-source">
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >YouTube</span
+                      >
+                    </div>
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >RuTube</span
+                      >
+                    </div>
+                    <div
+                      class="blog-main__video-source-item"
+                      data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                    >
+                      <span
+                        class="blog-main__video-source-item-title hide-on-mobile"
+                        >Смотреть</span
+                      >
+                      <span class="blog-main__video-source-item-source"
+                        >VK видео</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section hide-on-desktop">
+        <div class="container container--flex container-ai-assistant-fixed">
+          <button
+            class="hide-on-desktop button--assistant button--fixed button--primary"
+            data-button="assistanse"
+            id="fixed"
+          >
+            <img class="button__icon" src="./images/assistant-icon.svg" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="./"><img src="./images/logo-inverted.svg" /></a>
+        </div>
+        <nav class="footer__navigation">
+          <div class="footer__navigation-links">
+            <a href="./health-risk-map.html" class="footer__navigation-link"
+              >О карте рисков</a
+            >
+            <a href="./longevity-science.html'" class="footer__navigation-link"
+              >LONGEVITY SCIENCE</a
+            >
+            <a href="./blog.html" class="footer__navigation-link">ВИДЕО-БЛОГ</a>
+          </div>
+          <div class="footer__navigation-links">
+            <a href="./blog.html" class="footer__navigation-link">БЛОГ</a>
+            <a href="./payment-and-return.html" class="footer__navigation-link"
+              >ОПЛАТА и возврат</a
+            >
+            <a href="./faq.html" class="footer__navigation-link">FAQ</a>
+          </div>
+        </nav>
+        <div class="footer__navigation-docs">
+          <a href="./" class="footer__navigation-doc"
+            >Согласие на обработку персональных данных</a
+          >
+          <a href="./" class="footer__navigation-doc">Договор-Оферта</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

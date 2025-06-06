@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Карта рисков здоровья</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer="defer" src="./bundle.js"></script>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="/"><img src="./images/logo.svg" /></a>
+        </div>
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__link active" href="./health-risk-map.html"
+                >О карте рисков</a
+              >
+            </li>
+            <li>
+              <a class="header__link" href="./longevity-science.html"
+                >longevity science</a
+              >
+            </li>
+            <li><a class="header__link" href="./blog.html">Блог</a></li>
+            <li>
+              <a class="header__link" href="./payment-and-return.html"
+                >оплата и возврат</a
+              >
+            </li>
+            <li><a class="header__link" href="./faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="hide-on-desktop button button--burger">
+          <img
+            class="button__icon"
+            src="./images/burger-icon.svg"
+            width="33px"
+            height="33px"
+          />
+        </button>
+        <button
+          class="hide-on-mobile button button--assistant"
+          data-button="assistanse"
+        >
+          <span class="button__title">ИИ-Ассистент</span>
+          <img class="button__icon" src="./images/assistant-icon.svg" />
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__header">
+          <button class="hide-on-desktop button button--rounded button--burger">
+            <img class="button__icon" src="./images/close-icon.svg" />
+          </button>
+        </div>
+        <ul class="mobile-menu__menu">
+          <li>
+            <a class="mobile-menu__link" href="./health-risk-map.html"
+              ><span class="mobile-menu__link-title">О карте рисков</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./longevity-science.html'"
+              ><span class="mobile-menu__link-title">longevity science</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./blog.html"
+              ><span class="mobile-menu__link-title">Блог</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./payment-and-return.html"
+              ><span class="mobile-menu__link-title">оплата и возврат</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./faq.html"
+              ><span class="mobile-menu__link-title">FAQ</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container breadcrumbs">
+          <a href="./" class="breadcrumbs__item">Главная</a>
+          <span class="breadcrumbs__item active">О карте рисков здоровья</span>
+        </div>
+      </section>
+      <section class="section health-risks-map-about">
+        <div class="container health-risks-map-about__container">
+          <div class="health-risks-map-about__description">
+            <h2 class="title-h2-1 health-risks-map-about__title">
+              Карта рисков здоровья
+            </h2>
+            <p class="health-risks-map-about__info">
+              Это инновационный инструмент, основанный на уникальном
+              математическом алгоритме, который анализирует состояние вашего
+              организма и прогнозирует возможные риски ускоренного старения
+              биологических систем. Она охватывает 11 ключевых биологических
+              систем, что позволяет получить полное представление о состоянии
+              здоровья и выявить потенциальные угрозы.
+            </p>
+            <div
+              class="hide-on-desktop health-risks-map-about__description-image"
+            >
+              <img src="./images/health-risks-mobile.png" />
+            </div>
+            <p class="health-risks-map-about__info">
+              Благодаря этому подходу, вы сможете заранее узнать в каком
+              возрасте необходимо предпринять определенные меры для поддержания
+              своего здоровья.
+            </p>
+            <a
+              class="button button--full button--primary hide-on-mobile"
+              href=""
+              ><span class="button__title"
+                >Попробовать пример КАРТЫ РИСКОВ</span
+              >
+              <img src="./images/arrow-up-xs.svg" height="12px" width="12px"
+            /></a>
+          </div>
+          <div class="health-risks-map-about__content">
+            <img src="./images/health-risks-reduction.png" />
+            <span class="health-risks-map-about__content-tooltip"
+              >*Пример расчета</span
+            >
+            <a
+              class="button button--full button--primary hide-on-desktop"
+              href=""
+              ><span class="button__title"
+                >Попробовать пример КАРТЫ РИСКОВ</span
+              >
+              <img src="./images/arrow-up-xs.svg" height="12px" width="12px"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section risks-map-calculation section--padding-bottom-lg section--padding-top-lg"
+      >
+        <div class="container risks-map-calculation__container">
+          <h2 class="title-h2-1 risks-map-calculation__title">
+            Зачем нужен расчет карты рисков
+          </h2>
+          <div class="risks-map-calculation__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="risks-map-calculation-slide swiper-slide">
+                <div class="risks-map-calculation-slide__image">
+                  <img
+                    src="./images/risks-map-calculation-slide-1.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="risks-map-calculation-slide__content">
+                  <div class="risks-map-calculation-slide__number">01</div>
+                  <span class="risks-map-calculation-slide__title"
+                    >Предотвращение заболеваний</span
+                  >
+                  <p class="risks-map-calculation-slide__description">
+                    Ранняя диагностика позволяет выявить риски и предотвратить
+                    развитие заболеваний.
+                  </p>
+                </div>
+              </div>
+              <div class="risks-map-calculation-slide swiper-slide">
+                <div class="risks-map-calculation-slide__image">
+                  <img
+                    src="./images/risks-map-calculation-slide-2.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="risks-map-calculation-slide__content">
+                  <div class="risks-map-calculation-slide__number">02</div>
+                  <span class="risks-map-calculation-slide__title"
+                    >Оптимизация образа жизни</span
+                  >
+                  <p class="risks-map-calculation-slide__description">
+                    На основе анализа вы сможете скорректировать свои привычки и
+                    образ жизни для улучшения здоровья.
+                  </p>
+                </div>
+              </div>
+              <div class="risks-map-calculation-slide swiper-slide">
+                <div class="risks-map-calculation-slide__image">
+                  <img
+                    src="./images/risks-map-calculation-slide-3.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="risks-map-calculation-slide__content">
+                  <div class="risks-map-calculation-slide__number">03</div>
+                  <span class="risks-map-calculation-slide__title"
+                    >Персональные рекомендации</span
+                  >
+                  <p class="risks-map-calculation-slide__description">
+                    Карта предоставляет индивидуальные советы по профилактике и
+                    улучшению состояния здоровья.
+                  </p>
+                </div>
+              </div>
+              <div class="risks-map-calculation-slide swiper-slide">
+                <div class="risks-map-calculation-slide__image">
+                  <img
+                    src="./images/risks-map-calculation-slide-4.png"
+                    alt=""
+                    class=""
+                  />
+                </div>
+                <div class="risks-map-calculation-slide__content">
+                  <div class="risks-map-calculation-slide__number">04</div>
+                  <span class="risks-map-calculation-slide__title"
+                    >Управление здоровьем</span
+                  >
+                  <p class="risks-map-calculation-slide__description">
+                    Понимание своих рисков поможет вам более осознанно подходить
+                    к вопросам здоровья и принимать обоснованные решения.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="calculation-metodology section section--padding-bottom-lg"
+      >
+        <div class="container calculation-metodology__container">
+          <div class="calculation-metodology__descriptor">
+            Методология расчета
+          </div>
+          <div class="calculation-metodology__subtitle">
+            Для построения корректного плана продления жизни конкретного
+            человека мы создали специальный медико-математический продукт - 
+            карту рисков здоровья. 
+          </div>
+          <div class="calculation-metodology__title">
+            Карта рисков разрабатывается индивидуально для каждого и строится на
+            основании:
+          </div>
+          <div class="calculation-metodology__content">
+            <div class="calculation-metodology__item">
+              <img
+                src="./images/tariff-icon.svg"
+                alt=""
+                class="calculation-metodology__item-icon"
+              />
+              <p class="calculation-metodology__item-title">
+                Данных вашего генома
+              </p>
+            </div>
+            <div class="calculation-metodology__item">
+              <img
+                src="./images/tariff-icon.svg"
+                alt=""
+                class="calculation-metodology__item-icon"
+              />
+              <p class="calculation-metodology__item-title">
+                Инструментальных исследований
+              </p>
+            </div>
+            <div class="calculation-metodology__item">
+              <img
+                src="./images/tariff-icon.svg"
+                alt=""
+                class="calculation-metodology__item-icon"
+              />
+              <p class="calculation-metodology__item-title">
+                Анкетирования образа жизни
+              </p>
+            </div>
+          </div>
+          <div class="hide-on-desktop calculation-metodology__info">
+            Далее полученные числовые и двоичные значения обрабатываются по
+            методике Event chain management
+          </div>
+        </div>
+      </section>
+      <section class="section event-chain-management">
+        <div class="container event-chain-management__container">
+          <div class="event-chain-management__info">
+            <div class="event-chain-management__subtitle hide-on-mobile">
+              Далее полученные числовые и двоичные значения обрабатываются по
+              методике
+            </div>
+            <div class="event-chain-management__title">
+              Event chain management
+            </div>
+            <p class="event-chain-management__text">
+              Это метод сетевого анализа, который ориентирован на выявление и
+              управление событиями и взаимосвязями между ними (цепочками
+              событий), влияющими на графики проекта.
+            </p>
+            <p class="event-chain-management__text hide-on-mobile">
+              Это метод планирования моделирования неопределенности. Методология
+              цепочки событий является расширением количественного анализа
+              рисков проекта с помощью моделирования методом Монте-Карло. Это
+              следующий шаг вперед, помимо метода критического пути и управления
+              проектами критической цепочки.
+            </p>
+            <p class="event-chain-management__text hide-on-mobile">
+              Методология цепочки событий пытается смягчить влияние
+              мотивационных и когнитивных искажений при оценке и
+              планировании.Это повышает точность оценки рисков и помогает
+              составлять более реалистичные графики проектов с поправкой на
+              риски.
+            </p>
+          </div>
+          <div class="event-chain-management__poster"></div>
+          <p class="event-chain-management__text hide-on-desktop">
+            Это метод планирования моделирования неопределенности. Методология
+            цепочки событий является расширением количественного анализа рисков
+            проекта с помощью моделирования методом Монте-Карло. Это следующий
+            шаг вперед, помимо метода критического пути и управления проектами
+            критической цепочки.
+          </p>
+          <p class="event-chain-management__text hide-on-desktop">
+            Методология цепочки событий пытается смягчить влияние мотивационных
+            и когнитивных искажений при оценке и планировании.Это повышает
+            точность оценки рисков и помогает составлять более реалистичные
+            графики проектов с поправкой на риски.
+          </p>
+        </div>
+      </section>
+      <section class="section section--padding-top-lg necessary-tests">
+        <div class="container necessary-tests__container">
+          <h2 class="title-h2-2 necessary-tests__title">Необходимые анализы</h2>
+          <div class="necessary-tests__list">
+            <div class="necessary-tests__item">
+              <p class="necessary-tests__item-title">
+                Какие анализы нужны для расчета
+              </p>
+              <p class="necessary-tests__item-description">
+                Чтобы узнать, какие анализы необходимы для расчета, пожалуйста,
+                обратитесь в чат с нашим ИИ-ассистентом.
+              </p>
+            </div>
+            <div class="necessary-tests__item">
+              <p class="necessary-tests__item-title">Где можно сдать анализы</p>
+              <p class="necessary-tests__item-description">
+                Вы можете обратиться в любой медицинский центр по вашему выбору.
+              </p>
+            </div>
+            <div class="necessary-tests__item">
+              <p class="necessary-tests__item-title">
+                В каком формате нужно предоставить результаты анализов
+              </p>
+              <p class="necessary-tests__item-description">
+                Для проведения расчета нам понадобится фото или PDF-файл с
+                результатами ваших анализов.
+              </p>
+            </div>
+          </div>
+          <button class="button button--inline hide-on-mobile">
+            <span class="button__title">ИИ-Ассистент</span>
+            <div class="button__icon"></div>
+          </button>
+          <button
+            class="button button--full button--primary hide-on-desktop"
+            download=""
+            href=""
+          >
+            <span class="button__title">ИИ-Ассистент</span>
+            <img src="./images/arrow-up-xs.svg" height="12px" width="12px" />
+          </button>
+        </div>
+      </section>
+      <section class="section tariffs">
+        <div class="container tariffs__container">
+          <h2 class="title-h2-2 center-align-desktop center-align-mobile">
+            ТАРИФЫ
+          </h2>
+          <div class="tariffs__list">
+            <div class="tariff-item">
+              <div class="tariff__header">
+                <img class="tariff__icon" src="./images/tariff-base.png" />
+                <span class="tariff__subtitle">Тариф</span>
+                <div class="tariff__title">
+                  <p class="tariff__name">Базовый</p>
+                  <p class="tariff__price">₽ 0</p>
+                </div>
+              </div>
+              <div class="tariff__description">
+                <div class="tariff__description-item">
+                  <p class="tariff__description-item-title">
+                    Что входит в<br />тариф
+                  </p>
+                  <div class="tariff__description-item-info">
+                    <p class="tariff__description-item-text">
+                      Прогноз по 3 основным биологическим системам
+                    </p>
+                    <p class="tariff__description-item-tooltip">
+                      (Пищеварительная)
+                    </p>
+                  </div>
+                </div>
+                <div class="tariff__description-item">
+                  <p class="tariff__description-item-title">
+                    Список необходимых анализов
+                  </p>
+                  <div
+                    class="tariff__description-item-info tariff__description-item-info--with-icon"
+                  >
+                    <p class="tariff__description-item-text">
+                      <img src="./images/tariff-icon.svg" />Общий анализ крови
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="button button--primary button--full">
+                <span class="button__title">ПОЛУЧИТЬ РАСЧЕТ</span>
+                <div class="button__icon"></div>
+              </button>
+            </div>
+            <div class="tariff-item">
+              <div class="tariff__header">
+                <img class="tariff__icon" src="./images/tariff-standart.png" />
+                <span class="tariff__subtitle">Тариф</span>
+                <div class="tariff__title">
+                  <p class="tariff__name">Стандарт</p>
+                  <p class="tariff__price">₽ 1.990</p>
+                </div>
+              </div>
+              <div class="tariff__description">
+                <div class="tariff__description-item">
+                  <p class="tariff__description-item-title">
+                    Что входит в<br />тариф
+                  </p>
+                  <div class="tariff__description-item-info">
+                    <p class="tariff__description-item-text">
+                      Прогноз по 8 биологическим системам
+                    </p>
+                    <p class="tariff__description-item-text">
+                      Персональные рекомендации по профилактике заболеваний
+                    </p>
+                  </div>
+                </div>
+                <div class="tariff__description-item">
+                  <p class="tariff__description-item-title">
+                    Список необходимых анализов
+                  </p>
+                  <div
+                    class="tariff__description-item-info tariff__description-item-info--with-icon"
+                  >
+                    <p class="tariff__description-item-text">
+                      <img src="./images/tariff-icon.svg" />Общий анализ крови
+                    </p>
+                    <p class="tariff__description-item-text">
+                      <img src="./images/tariff-icon.svg" />Анкета образа жизни
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="button button--primary button--full">
+                <span class="button__title">ПОЛУЧИТЬ РАСЧЕТ</span>
+                <div class="button__icon">
+                  <img src="./images/arrow-up-xs.svg" alt="" />
+                </div>
+              </button>
+            </div>
+            <div class="tariff-item">
+              <div class="tariff__header">
+                <img class="tariff__icon" src="./images/tariff-full.png" />
+                <span class="tariff__subtitle">Тариф</span>
+                <div class="tariff__title">
+                  <p class="tariff__name">Полный</p>
+                  <p class="tariff__price">₽ 9.990</p>
+                </div>
+              </div>
+              <div class="tariff__description">
+                <div class="tariff__description-item">
+                  <p class="tariff__description-item-title">
+                    Что входит в<br />тариф
+                  </p>
+                  <div class="tariff__description-item-info">
+                    <p class="tariff__description-item-text">
+                      Прогноз по 8 биологическим системам
+                    </p>
+                    <p class="tariff__description-item-text">
+                      Персональные рекомендации по профилактике заболеваний
+                    </p>
+                    <p class="tariff__description-item-text">
+                      Персональные рекомендации по профилактике заболеваний
+                    </p>
+                  </div>
+                </div>
+                <div class="tariff__description-item">
+                  <p class="tariff__description-item-title">
+                    Список необходимых анализов
+                  </p>
+                  <div
+                    class="tariff__description-item-info tariff__description-item-info--with-icon"
+                  >
+                    <p class="tariff__description-item-text">
+                      <img src="./images/tariff-icon.svg" />Общий анализ крови
+                    </p>
+                    <p class="tariff__description-item-text">
+                      <img src="./images/tariff-icon.svg" />Анкета образа жизни
+                    </p>
+                  </div>
+                </div>
+                <div class="tariff__overlay">
+                  <div class="descriptor tariff__descriptor">в разработке</div>
+                </div>
+              </div>
+              <button class="button button--primary button--full">
+                <span class="button__title">ПОЛУЧИТЬ РАСЧЕТ</span>
+                <div class="button__icon"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section blog">
+        <div class="container blog__container">
+          <h2 class="title-h2-2 blog__title">Блог</h2>
+          <div class="blog__slider swiper">
+            <div class="swiper-wrapper">
+              <a href="./" class="blog__slide swiper-slide"
+                ><img
+                  src="./images/blog-slide-1.png"
+                  class="blog__slide-image"
+                />
+                <div class="blog__slide-title">
+                  Как современные достижения продлевают нашу жизнь
+                </div>
+                <div class="blog__slide-description">
+                  Исследования, технологии и стратегии для улучшения качества
+                  жизни и увеличения ее продолжительности
+                </div>
+                <button class="button button--inline">
+                  <span class="button__title">Читать далее</span>
+                  <div class="button__icon"></div>
+                </button> </a
+              ><a href="./" class="blog__slide swiper-slide"
+                ><img
+                  src="./images/blog-slide-2.png"
+                  class="blog__slide-image"
+                />
+                <div class="blog__slide-title">БАДы: Мифы и реальность</div>
+                <div class="blog__slide-description">
+                  Как биологически активные добавки влияют на здоровье и что
+                  нужно знать перед их использованием
+                </div>
+                <button class="button button--inline">
+                  <span class="button__title">Читать далее</span>
+                  <div class="button__icon"></div>
+                </button> </a
+              ><a href="./" class="blog__slide swiper-slide"
+                ><img
+                  src="./images/blog-slide-3.png"
+                  class="blog__slide-image" />
+                <div class="blog__slide-title">
+                  Тайны болезней: как наше тело сигнализирует о проблемах
+                </div>
+                <div class="blog__slide-description">
+                  Заболевания — это не только медицинские термины и диагнозы, но
+                  и важные сигналы, которые наше тело посылает нам. Понимание
+                  этих сигналов может помочь в ранней диагностике и лечении
+                  различных недугов.
+                </div>
+                <button class="button button--inline">
+                  <span class="button__title">Читать далее</span>
+                  <div class="button__icon"></div></button
+              ></a>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <a
+            href="./blog.html"
+            class="button button--full button--primary hide-on-desktop"
+            ><span class="button__title">Перейти в блог</span>
+            <img src="./images/arrow-up-xs.svg" height="12px" width="12px"
+          /></a>
+        </div>
+      </section>
+      <section class="section hide-on-desktop">
+        <div class="container container--flex container-ai-assistant-fixed">
+          <button
+            class="hide-on-desktop button--assistant button--fixed button--primary"
+            data-button="assistanse"
+            id="fixed"
+          >
+            <img class="button__icon" src="./images/assistant-icon.svg" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="./"><img src="./images/logo-inverted.svg" /></a>
+        </div>
+        <nav class="footer__navigation">
+          <div class="footer__navigation-links">
+            <a href="./health-risk-map.html" class="footer__navigation-link"
+              >О карте рисков</a
+            >
+            <a href="./longevity-science.html'" class="footer__navigation-link"
+              >LONGEVITY SCIENCE</a
+            >
+            <a href="./blog.html" class="footer__navigation-link">ВИДЕО-БЛОГ</a>
+          </div>
+          <div class="footer__navigation-links">
+            <a href="./blog.html" class="footer__navigation-link">БЛОГ</a>
+            <a href="./payment-and-return.html" class="footer__navigation-link"
+              >ОПЛАТА и возврат</a
+            >
+            <a href="./faq.html" class="footer__navigation-link">FAQ</a>
+          </div>
+        </nav>
+        <div class="footer__navigation-docs">
+          <a href="./" class="footer__navigation-doc"
+            >Согласие на обработку персональных данных</a
+          >
+          <a href="./" class="footer__navigation-doc">Договор-Оферта</a>
+        </div>
+      </div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Блог</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer="defer" src="./bundle.js"></script>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="/"><img src="./images/logo.svg" /></a>
+        </div>
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="./health-risk-map.html"
+                >О карте рисков</a
+              >
+            </li>
+            <li>
+              <a class="header__link" href="./longevity-science.html"
+                >longevity science</a
+              >
+            </li>
+            <li><a class="header__link active" href="./blog.html">Блог</a></li>
+            <li>
+              <a class="header__link" href="./payment-and-return.html"
+                >оплата и возврат</a
+              >
+            </li>
+            <li><a class="header__link" href="./faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="hide-on-desktop button button--burger">
+          <img
+            class="button__icon"
+            src="./images/burger-icon.svg"
+            width="33px"
+            height="33px"
+          />
+        </button>
+        <button
+          class="hide-on-mobile button button--assistant"
+          data-button="assistanse"
+        >
+          <span class="button__title">ИИ-Ассистент</span>
+          <img class="button__icon" src="./images/assistant-icon.svg" />
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__header">
+          <button class="hide-on-desktop button button--rounded button--burger">
+            <img class="button__icon" src="./images/close-icon.svg" />
+          </button>
+        </div>
+        <ul class="mobile-menu__menu">
+          <li>
+            <a class="mobile-menu__link" href="./health-risk-map.html"
+              ><span class="mobile-menu__link-title">О карте рисков</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./longevity-science.html'"
+              ><span class="mobile-menu__link-title">longevity science</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./blog.html"
+              ><span class="mobile-menu__link-title">Блог</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./payment-and-return.html"
+              ><span class="mobile-menu__link-title">оплата и возврат</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+          <li>
+            <a class="mobile-menu__link" href="./faq.html"
+              ><span class="mobile-menu__link-title">FAQ</span
+              ><img
+                class="mobile-menu__link-icon"
+                src="./images/arrow-right.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="section">
+        <div class="container breadcrumbs">
+          <a href="./" class="breadcrumbs__item">Главная</a>
+          <a href="./blog.html" class="breadcrumbs__item">Блог</a>
+          <span class="breadcrumbs__item active"
+            >Старение это болезнь и ее можно лечить! Как остановить
+            старение?</span
+          >
+        </div>
+      </section>
+      <section class="section video-article article">
+        <div class="container video-article__container">
+          <div class="video-article__content">
+            <div class="video">
+              <iframe
+                src=""
+                width="100%"
+                height="100%"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <div
+                class="video__overlay video__overlay--poster"
+                style="background-image: url('./images/poster.png')"
+              ></div>
+              <div class="video__overlay video__overlay--source">
+                <div class="video__source-container">
+                  <p class="video__source-title">
+                    Выберите источник для воспроизведения видео:
+                  </p>
+                  <div class="video__source-items">
+                    <div
+                      class="video__source-item"
+                      data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                    >
+                      <img
+                        src="./images/rutube-icon.svg"
+                        class="video__source-item-icon"
+                      /><span class="video__source-item-title">RuTube</span>
+                    </div>
+                    <div
+                      class="video__source-item"
+                      data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                    >
+                      <img
+                        src="./images/vkvideo-icon.svg"
+                        class="video__source-item-icon"
+                      /><span class="video__source-item-title">VkВидео</span>
+                    </div>
+                    <div
+                      class="video__source-item"
+                      data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                    >
+                      <img
+                        src="./images/youtube-icon.svg"
+                        class="video__source-item-icon"
+                      /><span class="video__source-item-title">YouTube</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video__overlay video__overlay--play">
+                <div class="video__play-btn"></div>
+              </div>
+            </div>
+            <div class="article__info-block">
+              <span class="article__info-block-title">Дата публикации</span>
+              <span class="article__info-block-value">01.04.2025</span>
+            </div>
+            <div class="article__content">
+              <h1>
+                Старение это болезнь и ее можно лечить! Как остановить старение?
+                Биолог - Алексей Москалев
+              </h1>
+              <p>
+                Хочется как можно дольше оставаться молодым и здоровым. Но
+                почему наш организм стареет, и можно ли остановить или хотя бы
+                замедлить этот процесс?
+              </p>
+              <p>
+                В этом видео разбираемся в научных основах старения вместе с
+                Алексеем Москалёвым — профессором Российской академии наук,
+                доктором биологических наук и ведущим специалистом в области
+                геронтологии.
+              </p>
+              <p>
+                Вы узнаете, от чего зависит долголетие и какие факторы влияют на
+                старение организма. Только проверенные научные факты и
+                исследования. Смотрите видео до конца, чтобы узнать, с чего
+                начать путь к долголетию!
+              </p>
+            </div>
+            <div class="article__share">
+              <span class="article__share-title">Поделиться</span>
+              <div class="article__share-links">
+                <a hraf="javascript:void(0)" class="article__share-link"
+                  ><img src="./images/tg-icon.svg" alt="" class="" /> </a
+                ><a hraf="javascript:void(0)" class="article__share-link"
+                  ><img src="./images/vk-icon.svg" alt="" class="" /> </a
+                ><a hraf="javascript:void(0)" class="article__share-link"
+                  ><img src="./images/ok-icon.svg" alt="" class="" /> </a
+                ><a hraf="javascript:void(0)" class="article__share-link"
+                  ><img src="./images/wa-icon.svg" alt="" class=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="recomended-content">
+            <div class="recomended-content__title">Смотрите также</div>
+            <div class="recomended-content__item">
+              <div class="recomended-content__item-title">
+                Старение это болезнь и ее можно лечить! Как остановить старение?
+                Биолог - Алексей Москалев
+              </div>
+              <div class="recomended-content__item-info">
+                Хочется как можно дольше оставаться молодым и здоровым. Но
+                почему наш организм стареет, и можно ли остановить или хотя бы
+                замедлить этот процесс?
+              </div>
+              <a href="./blog-video.html" class="button button--inline"
+                ><span class="button__title">смотреть</span>
+                <div class="button__icon"></div
+              ></a>
+            </div>
+            <div class="recomended-content__item">
+              <div class="recomended-content__item-title">
+                Старение это болезнь и ее можно лечить! Как остановить старение?
+                Биолог - Алексей Москалев
+              </div>
+              <div class="recomended-content__item-info">
+                Хочется как можно дольше оставаться молодым и здоровым. Но
+                почему наш организм стареет, и можно ли остановить или хотя бы
+                замедлить этот процесс?
+              </div>
+              <a href="./blog-video.html" class="button button--inline"
+                ><span class="button__title">смотреть</span>
+                <div class="button__icon"></div
+              ></a>
+            </div>
+            <div class="recomended-content__item">
+              <div class="recomended-content__item-title">
+                Старение это болезнь и ее можно лечить! Как остановить старение?
+                Биолог - Алексей Москалев
+              </div>
+              <div class="recomended-content__item-info">
+                Хочется как можно дольше оставаться молодым и здоровым. Но
+                почему наш организм стареет, и можно ли остановить или хотя бы
+                замедлить этот процесс?
+              </div>
+              <a href="./blog-video.html" class="button button--inline"
+                ><span class="button__title">смотреть</span>
+                <div class="button__icon"></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section blog">
+        <div class="container blog__container">
+          <h2 class="title-h2-2 blog__title">статьи</h2>
+          <div class="blog__slider swiper">
+            <div class="swiper-wrapper">
+              <a href="./" class="blog__slide swiper-slide"
+                ><img
+                  src="./images/blog-slide-1.png"
+                  class="blog__slide-image"
+                />
+                <div class="blog__slide-title">
+                  Как современные достижения продлевают нашу жизнь
+                </div>
+                <div class="blog__slide-description">
+                  Исследования, технологии и стратегии для улучшения качества
+                  жизни и увеличения ее продолжительности
+                </div>
+                <button class="button button--inline">
+                  <span class="button__title">Читать далее</span>
+                  <div class="button__icon"></div>
+                </button> </a
+              ><a href="./" class="blog__slide swiper-slide"
+                ><img
+                  src="./images/blog-slide-2.png"
+                  class="blog__slide-image"
+                />
+                <div class="blog__slide-title">БАДы: Мифы и реальность</div>
+                <div class="blog__slide-description">
+                  Как биологически активные добавки влияют на здоровье и что
+                  нужно знать перед их использованием
+                </div>
+                <button class="button button--inline">
+                  <span class="button__title">Читать далее</span>
+                  <div class="button__icon"></div>
+                </button> </a
+              ><a href="./" class="blog__slide swiper-slide"
+                ><img
+                  src="./images/blog-slide-3.png"
+                  class="blog__slide-image" />
+                <div class="blog__slide-title">
+                  Тайны болезней: как наше тело сигнализирует о проблемах
+                </div>
+                <div class="blog__slide-description">
+                  Заболевания — это не только медицинские термины и диагнозы, но
+                  и важные сигналы, которые наше тело посылает нам. Понимание
+                  этих сигналов может помочь в ранней диагностике и лечении
+                  различных недугов.
+                </div>
+                <button class="button button--inline">
+                  <span class="button__title">Читать далее</span>
+                  <div class="button__icon"></div></button
+              ></a>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section hide-on-desktop">
+        <div class="container container--flex container-ai-assistant-fixed">
+          <button
+            class="hide-on-desktop button--assistant button--fixed button--primary"
+            data-button="assistanse"
+            id="fixed"
+          >
+            <img class="button__icon" src="./images/assistant-icon.svg" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="./"><img src="./images/logo-inverted.svg" /></a>
+        </div>
+        <nav class="footer__navigation">
+          <div class="footer__navigation-links">
+            <a href="./health-risk-map.html" class="footer__navigation-link"
+              >О карте рисков</a
+            >
+            <a href="./longevity-science.html'" class="footer__navigation-link"
+              >LONGEVITY SCIENCE</a
+            >
+            <a href="./blog.html" class="footer__navigation-link">ВИДЕО-БЛОГ</a>
+          </div>
+          <div class="footer__navigation-links">
+            <a href="./blog.html" class="footer__navigation-link">БЛОГ</a>
+            <a href="./payment-and-return.html" class="footer__navigation-link"
+              >ОПЛАТА и возврат</a
+            >
+            <a href="./faq.html" class="footer__navigation-link">FAQ</a>
+          </div>
+        </nav>
+        <div class="footer__navigation-docs">
+          <a href="./" class="footer__navigation-doc"
+            >Согласие на обработку персональных данных</a
+          >
+          <a href="./" class="footer__navigation-doc">Договор-Оферта</a>
+        </div>
+      </div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>

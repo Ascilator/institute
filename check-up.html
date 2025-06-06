@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Институт продления жизни</title>
+    <script defer="defer" src="./bundle.js"></script>
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles_checkup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="/"><img src="./images/logo.svg" /></a>
+        </div>
+        <nav>
+          <ul class="header__menu">
+            <li>
+              <a class="header__link" href="./health-risk-map.html"
+                >О карте рисков</a
+              >
+            </li>
+            <li>
+              <a class="header__link" href="./longevity-science.html"
+                >longevity science</a
+              >
+            </li>
+            <li><a class="header__link" href="./blog.html">Блог</a></li>
+            <li>
+              <a class="header__link" href="./payment-and-return.html"
+                >оплата и возврат</a
+              >
+            </li>
+            <li><a class="header__link" href="./faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="hide-on-desktop button button--burger">
+          <img
+            class="button__icon"
+            src="./images/burger-icon.svg"
+            width="33px"
+            height="33px"
+          />
+        </button>
+        <button
+          class="hide-on-mobile button button--assistant"
+          data-button="assistanse"
+        >
+          <span class="button__title">ИИ-Ассистент</span>
+          <img class="button__icon" src="./images/assistant-icon.svg" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="mobile-menu">
+        <div class="mobile-menu__container">
+          <div class="mobile-menu__header">
+            <button
+              class="hide-on-desktop button button--rounded button--burger"
+            >
+              <img class="button__icon" src="./images/close-icon.svg" />
+            </button>
+          </div>
+          <ul class="mobile-menu__menu">
+            <li>
+              <a class="mobile-menu__link" href="./health-risk-map.html"
+                ><span class="mobile-menu__link-title">О карте рисков</span
+                ><img
+                  class="mobile-menu__link-icon"
+                  src="./images/arrow-right.svg"
+              /></a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="./longevity-science.html'"
+                ><span class="mobile-menu__link-title">longevity science</span
+                ><img
+                  class="mobile-menu__link-icon"
+                  src="./images/arrow-right.svg"
+              /></a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="./blog.html"
+                ><span class="mobile-menu__link-title">Блог</span
+                ><img
+                  class="mobile-menu__link-icon"
+                  src="./images/arrow-right.svg"
+              /></a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="./payment-and-return.html"
+                ><span class="mobile-menu__link-title">оплата и возврат</span
+                ><img
+                  class="mobile-menu__link-icon"
+                  src="./images/arrow-right.svg"
+              /></a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="./faq.html"
+                ><span class="mobile-menu__link-title">FAQ</span
+                ><img
+                  class="mobile-menu__link-icon"
+                  src="./images/arrow-right.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="hero _banner_desktop">
+        <div class="container hero__container checkup__container">
+          <section class="section">
+            <div class="container breadcrumbs" bis_skin_checked="1">
+              <a href="./" class="breadcrumbs__item">Главная</a>
+              <span class="breadcrumbs__item active">Check-up</span>
+            </div>
+          </section>
+          <section class="hero__header">
+            <h1>Протокол долголетия</h1>
+            <p>
+              Диагностика 11 систем органов человека и расчет рисков развития
+              заболеваний
+            </p>
+            <button class="button button--primary">
+              <span class="button__title">заказать</span>
+              <div class="button__icon" bis_skin_checked="1">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 21L21 1"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1 1H21V21"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </section>
+        </div>
+      </section>
+      <section class="programm-includes">
+        <div class="container">
+          <h2 class="programm-includes__title">программа включает</h2>
+          <div class="programm-includes__content-box">
+            <div class="includes-item">
+              <img
+                src="images/includes_1.png"
+                class="includes-item__img"
+                alt=""
+              />
+              <span class="includes-item__tag"
+                ><svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 1H1V21H5" stroke="#949494" />
+                </svg>
+                <span>возраст</span>
+                <svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 1H4V21H0" stroke="#949494" />
+                </svg>
+              </span>
+              <h3>Определение биологического возраста</h3>
+              <p>
+                Вы получите точное определение биологического возраста и<br />
+                скорости старения каждой из 11 систем организма — от
+                сердечно-<br />сосудистой до нервной.
+              </p>
+            </div>
+            <div class="includes-item">
+              <img
+                src="images/includes_2.png"
+                class="includes-item__img"
+                alt=""
+              />
+              <span class="includes-item__tag"
+                ><svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 1H1V21H5" stroke="#949494" />
+                </svg>
+                <span>риски</span>
+                <svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 1H4V21H0" stroke="#949494" />
+                </svg>
+              </span>
+              <h3>Оценка уровня рисков здоровья</h3>
+              <p>
+                На основе ваших персональных данных будет дана оценка<br />
+                вероятности нарушений в каждой из 11 ключевых
+                <br />биологических систем организма
+              </p>
+            </div>
+            <div class="includes-item">
+              <img
+                src="images/includes_3.png"
+                class="includes-item__img"
+                alt=""
+              />
+              <span class="includes-item__tag"
+                ><svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 1H1V21H5" stroke="#949494" />
+                </svg>
+                <span>старение</span>
+                <svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 1H4V21H0" stroke="#949494" />
+                </svg>
+              </span>
+              <h3>Перечень причин ускоренного старения</h3>
+              <p>
+                Вы получите анализ персональных факторов, способствующих<br />
+                ускоренному старению организма, с выявлением причин в каждой<br />
+                системе.
+              </p>
+            </div>
+            <div class="includes-item">
+              <img
+                src="images/includes_4.png"
+                class="includes-item__img"
+                alt=""
+              />
+              <span class="includes-item__tag"
+                ><svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 1H1V21H5" stroke="#949494" />
+                </svg>
+                <span>план</span>
+                <svg
+                  width="5"
+                  height="22"
+                  viewBox="0 0 5 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 1H4V21H0" stroke="#949494" />
+                </svg>
+              </span>
+              <h3>Персональный план действий</h3>
+              <p>
+                Для вас будет разработан индивидуальный план по <br />снижению
+                рисков для здоровья и замедлению процессов<br />
+                старения
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stages-of-programm">
+        <div class="container">
+          <h2 class="stages-of-programm__title">
+            Этапы прохождения <br />
+            программы
+          </h2>
+          <div class="stages-of-programm__content-box">
+            <div class="stage-item">
+              <div class="stage-item__img">
+                <img src="images/stage_1.png" alt="" />
+              </div>
+              <div class="stage-item__line _purple">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18" r="18" fill="#BFBBDE" />
+                  <circle cx="18" cy="18" r="10" fill="#8F93E3" />
+                </svg>
+              </div>
+              <div class="stage-item__text-part">
+                <h3>1 ЭТАП</h3>
+                <p>
+                  Без ожиданий и очередей,
+                  <span>с VIP-сопровождением</span> персонального менеджера на
+                  каждом этапе.
+                </p>
+                <ul>
+                  <li><p>Прием врача</p></li>
+                  <li><p>Сдача анализов</p></li>
+                  <li><p>Диагностика</p></li>
+                </ul>
+                <div class="stage-item__img-mobile">
+                  <img src="images/stage_1.png" alt="" />
+                </div>
+                <button class="stage-item__button">
+                  <span class="stage-item__title">
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 1H1V21H5" stroke="white" />
+                    </svg>
+                    срок
+
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 1H4V21H0" stroke="white" />
+                    </svg>
+                  </span>
+                  <span class="stage-item_subtitle">1 день</span>
+                </button>
+              </div>
+            </div>
+            <div class="stage-item">
+              <div class="stage-item__img">
+                <img src="images/stage_2.png" alt="" />
+              </div>
+              <div class="stage-item__line _dashed">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18" r="18" fill="#BFBBDE" />
+                  <circle cx="18" cy="18" r="10" fill="#8F93E3" />
+                </svg>
+              </div>
+              <div class="stage-item__text-part">
+                <h3>2 ЭТАП</h3>
+                <ul>
+                  <li class="_small_padding">
+                    <p>Интерпретация результатов анализов с помощью ИИ</p>
+                    <p>
+                      Обработка данных с использованием искусственного
+                      интеллекта — быстро, точно и без человеческого фактора.
+                    </p>
+                  </li>
+                  <li class="_small_padding">
+                    <p>Экспертная верификация и заключение</p>
+                    <p>
+                      Результаты проверяют врачи-эксперты и составляют понятное
+                      заключение с персональным планом замедления старения
+                    </p>
+                  </li>
+                  <li class="_small_padding">
+                    <p>Полная расшифровка генома</p>
+                    <p>
+                      Глубокий генетический анализ для выявления
+                      предрасположенностей, рисков и персонализированных
+                      рекомендаций.
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="stage-item__img-mobile">
+                  <img src="images/stage_2.png" alt="" />
+                </div>
+                <button class="stage-item__button">
+                  <span class="stage-item__title">
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 1H1V21H5" stroke="white" />
+                    </svg>
+                    срок
+
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 1H4V21H0" stroke="white" />
+                    </svg>
+                  </span>
+                  <span class="stage-item_subtitle">14 дней</span>
+                </button>
+              </div>
+            </div>
+            <div class="stage-item">
+              <div class="stage-item__img">
+                <img src="images/stage_3.png" alt="" />
+              </div>
+              <div class="stage-item__line">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="18" cy="18" r="18" fill="#BFBBDE" />
+                  <circle cx="18" cy="18" r="10" fill="#8F93E3" />
+                </svg>
+              </div>
+              <div class="stage-item__text-part">
+                <h3>3 ЭТАП</h3>
+                <ul>
+                  <li><p>Встреча с врачом-экспертом</p></li>
+                  <li class="__with_border">
+                    <p>
+                      Презентация результатов и персональной книги с протоколом
+                      долголетия
+                    </p>
+                  </li>
+                </ul>
+
+                <div class="stage-item__img-mobile">
+                  <img src="images/stage_3.png" alt="" />
+                </div>
+                <button class="button button--primary">
+                  <span class="button__title">заказать check-up</span>
+                  <div class="button__icon" bis_skin_checked="1">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 21L21 1"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        d="M1 1H21V21"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-the-programm">
+        <div class="container">
+          <span class="about-the-programm__pretitle">
+            <svg
+              width="5"
+              height="22"
+              viewBox="0 0 5 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M5 1H1V21H5" stroke="#949494" />
+            </svg>
+            о программе
+            <svg
+              width="5"
+              height="22"
+              viewBox="0 0 5 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 1H4V21H0" stroke="#949494" />
+            </svg>
+          </span>
+          <h2 class="about-the-programm__title">
+            Программа помогает <br />
+            выявить скрытые <br />
+            риски ускоренного<br />
+            старения и вовремя <br />принять меры
+          </h2>
+          <div class="about-the-programm__content_box">
+            <div
+              class="blog-main__video-wrapper video __about-the-programm-video"
+            >
+              <iframe
+                src=""
+                width="100%"
+                height="100%"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <div
+                class="video__overlay video__overlay--poster"
+                style="background-image: url('./images/poster_2.png')"
+              ></div>
+              <div class="video__overlay video__overlay--source">
+                <div class="video__source-container">
+                  <p class="video__source-title">
+                    Выберите источник для воспроизведения видео:
+                  </p>
+                  <div class="video__source-items">
+                    <div
+                      class="video__source-item"
+                      data-url="https://rutube.ru/play/embed/2991aeff6a4fd9d51c044476a6422840"
+                    >
+                      <img
+                        src="./images/rutube-icon.svg"
+                        class="video__source-item-icon"
+                      /><span class="video__source-item-title">RuTube</span>
+                    </div>
+                    <div
+                      class="video__source-item"
+                      data-url="https://vk.com/video_ext.php?oid=-22822305&id=456241864&hd=2"
+                    >
+                      <img
+                        src="./images/vkvideo-icon.svg"
+                        class="video__source-item-icon"
+                      /><span class="video__source-item-title">VkВидео</span>
+                    </div>
+                    <div
+                      class="video__source-item"
+                      data-url="https://www.youtube.com/embed/uqF1rCJJ7c0?si=BBVxhYjrDUsvIWU6"
+                    >
+                      <img
+                        src="./images/youtube-icon.svg"
+                        class="video__source-item-icon"
+                      /><span class="video__source-item-title">YouTube</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video__overlay video__overlay--play">
+                <div class="video__play-btn"></div>
+              </div>
+            </div>
+            <div class="about-the-programm__text_block">
+              <svg
+                width="13"
+                height="291"
+                viewBox="0 0 13 291"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 290H1V1.00001H13"
+                  stroke="white"
+                  stroke-opacity="0.33"
+                  stroke-width="2"
+                />
+              </svg>
+              <div class="about-the-programm__middle_part">
+                <p>
+                  Это инновационный инструмент, основанный на уникальном
+                  математическом алгоритме, который анализирует состояние вашего
+                  организма и прогнозирует возможные риски ускоренного старения
+                  биологических систем.
+                </p>
+                <img src="images/dna_2.png" alt="" />
+                <div class="about-the-programm__prices">
+                  <div class="about-the-programm__price_old">
+                    <span>Обычная стоимость</span>
+                    <span>150 000 руб</span>
+                  </div>
+                  <div class="about-the-programm__price_new">
+                    <span>Стоимость до 30 июня</span>
+                    <span>115 000 руб</span>
+                  </div>
+                </div>
+              </div>
+              <svg
+                width="13"
+                height="291"
+                viewBox="0 0 13 291"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 290H12V1H0"
+                  stroke="white"
+                  stroke-opacity="0.33"
+                  stroke-width="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ai-tools">
+        <div class="container">
+          <div class="ai-tools__image">
+            <img src="images/ai_poster_1.png" alt="" />
+          </div>
+          <div class="ai-tools__rest">
+            <span class="ai-tools__pretitle">
+              <svg
+                width="5"
+                height="22"
+                viewBox="0 0 5 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5 1H1V21H5" stroke="#949494"></path>
+              </svg>
+              AI-технологии
+              <svg
+                width="5"
+                height="22"
+                viewBox="0 0 5 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 1H4V21H0" stroke="#949494"></path>
+              </svg>
+            </span>
+            <h2 class="ai-tools__title">
+              Данный продукт стал возможен за счет развития технологий ИИ и их
+              внедрения в медицинскую практику
+            </h2>
+            <div class="ai-tools__iternal_text">
+              <div class="ai-tools__left_part">
+                <p>
+                  Искусственный интеллект выполняет расчеты по результатам
+                  анализа, а также строит модель прогнозирования рисков. Все
+                  этапы моделирования выполняются полностью персонализировано.
+                </p>
+
+                <button class="button button--primary">
+                  <span class="button__title">заказать</span>
+                  <div class="button__icon" bis_skin_checked="1">
+                    <img src="./images/arrow-up-xs.svg" alt="" />
+                  </div>
+                </button>
+              </div>
+              <div class="ai-tools__right_part">
+                <img src="images/ai_poster_2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="ai-tools__mobile">
+            <div class="ai-tools__mobile-item">
+              <img src="images/ai_poster_1.png" alt="" />
+              <p>
+                Все этапы моделирования выполняются индивидуально, с учетом
+                ваших уникальных данных
+              </p>
+            </div>
+            <div class="ai-tools__mobile-item">
+              <img src="images/ai_poster_2.png" alt="" />
+              <p>
+                ИИ выполняет расчеты по результатам анализа, а также строит
+                модель прогнозирования рисков
+              </p>
+            </div>
+          </div>
+          <button class="button button--primary __mobile">
+            <span class="button__title">заказать</span>
+            <div class="button__icon" bis_skin_checked="1">
+              <img src="./images/arrow-up-xs.svg" alt="" />
+            </div>
+          </button>
+        </div>
+      </section>
+      <section class="our_experts">
+        <div class="container">
+          <h2 class="our_experts__title">Наши эксперты</h2>
+          <div class="our_experts__content_box">
+            <div class="expert_item">
+              <div class="expert_item__prev_svg"></div>
+              <div class="expert_item__header">
+                <div class="expert_item__image">
+                  <img src="images/expert_1.png" alt="" />
+                </div>
+                <div class="expert_item__exp">
+                  <span>
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 1H1V21H5" stroke="#949494" />
+                    </svg>
+                    стаж 17 лет
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 1H4V21H0" stroke="#949494" />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 1H1V21H5" stroke="#949494" />
+                    </svg>
+                    КЦД на Пресне
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 1H4V21H0" stroke="#949494" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="expert_item__text-data">
+                <h3>Черемисина Анна Юрьевна</h3>
+                <span>Кардиолог, Терапевт</span>
+                <ul>
+                  <li>
+                    <h4>Образование</h4>
+                    <p>
+                      2002-2008 г. Казанский Государственный Медицинский
+                      Университет
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Кандидат медицинских наук</h4>
+                    <p>
+                      Кандидатская диссертация на тему: «Сравнительный анализ
+                      суточного профиля артериального давления у больных
+                      гипертонической болезнью 1-2 стадии», Год защиты 2014
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="expert_item__next_svg"></div>
+            </div>
+            <div class="expert_item">
+              <div class="expert_item__prev_svg"></div>
+              <div class="expert_item__header">
+                <div class="expert_item__image">
+                  <img src="images/expert_2.png" alt="" />
+                </div>
+                <div class="expert_item__exp">
+                  <span>
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 1H1V21H5" stroke="#949494" />
+                    </svg>
+                    стаж 32 года
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 1H4V21H0" stroke="#949494" />
+                    </svg>
+                  </span>
+                  <span>
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M5 1H1V21H5" stroke="#949494" />
+                    </svg>
+                    КЦД на Пресне
+                    <svg
+                      width="5"
+                      height="22"
+                      viewBox="0 0 5 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 1H4V21H0" stroke="#949494" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="expert_item__text-data">
+                <h3>Максакова Светлана Александровна</h3>
+                <span>Кардиолог, Терапевт</span>
+                <ul>
+                  <li>
+                    <h4>Образование</h4>
+                    <p>
+                      1986 – 1992 г. Владивостокский Государственный Медицинский
+                      Институт
+                    </p>
+                  </li>
+                  <li>
+                    <h4>Повышение квалификации</h4>
+                    <p>
+                      Международный институт интегральной превентивной и
+                      антивозрастной медицины «PreventAge» - врач функциональной
+                      медицины
+                    </p>
+                    <p>
+                      РУДН - иммунолог иммунология и аллергология, практическая
+                      трансфузиология
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="expert_item__next_svg"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="programm-data">
+        <div class="container">
+          <h2 class="programm-data__title">состав программы</h2>
+          <div class="programm-data__content_box">
+            <div class="programm-data__column">
+              <h3 class="programm-data__subtitle">Для Женщин</h3>
+              <section class="programm-data__info-block">
+                <h4>Консультации специалистов</h4>
+                <ul>
+                  <li>Первичный прием врача превентивной медицины </li>
+                  <li>Повторный прием врача превентивной медицины </li>
+                </ul>
+              </section>
+              <section class="programm-data__info-block">
+                <h4>Инструментальная диагностика </h4>
+                <ul>
+                  <li>УЗИ органов брюшной полости</li>
+                  <li>УЗИ почек и надпочечников</li>
+                  <li>УЗИ органов малого таза</li>
+                  <li>Эхокардиография </li>
+                </ul>
+              </section>
+              <section class="programm-data__info-block">
+                <h4>Лабораторные исследования</h4>
+                <ul>
+                  <li>Глюкоза (натощак)</li>
+                  <li>ЛПВП (хороший холестерин)</li>
+                  <li>ЛПНП (плохой холестерин)</li>
+                  <li>Общий холестерин</li>
+                  <li>С-реактивный белок (СРБ)</li>
+                  <li>Триглицериды</li>
+                  <li>Уровень амилазы</li>
+                  <li>Уровень бикарбонатов в крови</li>
+                  <li>Уровень билирубина</li>
+                  <li>Уровень глюкагона</li>
+                  <li>Уровень глюкозы (натощак)</li>
+                  <li>Уровень дофамина</li>
+                  <li>Уровень инсулина (натощак)</li>
+                  <li>Уровень кортизола (утренний)</li>
+                  <li>Уровень креатинина</li>
+                  <li>Уровень липазы</li>
+                  <li>Уровень печени (АЛТ, АСТ)</li>
+                  <li>Уровень серотонина</li>
+                  <li>Уровень тиреоидных гормонов (ТТГ)</li>
+                  <li>Уровень триглицеридов</li>
+                  <li>
+                    Уровень ферментов поджелудочной железы (амилаза, липаза)
+                  </li>
+                  <li>Уровень холестерина</li>
+                  <li>Фибриноген</li>
+                  <li>HbA1c (гликированный гемоглобин)</li>
+                  <li>Уровень тестостерона</li>
+                  <li>
+                    Генетическое тестирование (расширенная биохимия, диагностика
+                    анемий, нарушений липидного и углеводного обменов,
+                    гормональный фон, онкомаркеры, генетическая
+                    предрасположенность к заболеваниям и др.)
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="programm-data__column">
+              <h3 class="programm-data__subtitle">Для мужчин</h3>
+              <section class="programm-data__info-block">
+                <h4>Консультации специалистов</h4>
+                <ul>
+                  <li>Первичный прием врача превентивной медицины </li>
+                  <li>Повторный прием врача превентивной медицины </li>
+                </ul>
+              </section>
+              <section class="programm-data__info-block">
+                <h4>Инструментальная диагностика </h4>
+                <ul>
+                  <li>УЗИ органов брюшной полости</li>
+                  <li>УЗИ почек и надпочечников</li>
+                  <li>УЗИ органов малого таза</li>
+                  <li>Эхокардиография </li>
+                </ul>
+              </section>
+              <section class="programm-data__info-block">
+                <h4>Лабораторные исследования</h4>
+                <ul>
+                  <li>Глюкоза (натощак)</li>
+                  <li>ЛПВП (хороший холестерин)</li>
+                  <li>ЛПНП (плохой холестерин)</li>
+                  <li>Общий холестерин</li>
+                  <li>С-реактивный белок (СРБ)</li>
+                  <li>Триглицериды</li>
+                  <li>Уровень амилазы</li>
+                  <li>Уровень бикарбонатов в крови</li>
+                  <li>Уровень билирубина</li>
+                  <li>Уровень глюкагона</li>
+                  <li>Уровень глюкозы (натощак)</li>
+                  <li>Уровень дофамина</li>
+                  <li>Уровень инсулина (натощак)</li>
+                  <li>Уровень кортизола (утренний)</li>
+                  <li>Уровень креатинина</li>
+                  <li>Уровень липазы</li>
+                  <li>Уровень печени (АЛТ, АСТ)</li>
+                  <li>Уровень серотонина</li>
+                  <li>Уровень тиреоидных гормонов (ТТГ)</li>
+                  <li>Уровень триглицеридов</li>
+                  <li>
+                    Уровень ферментов поджелудочной железы (амилаза, липаза)
+                  </li>
+                  <li>Уровень холестерина</li>
+                  <li>Фибриноген</li>
+                  <li>HbA1c (гликированный гемоглобин)</li>
+                  <li>Уровень тестостерона</li>
+                  <li>
+                    Генетическое тестирование (расширенная биохимия, диагностика
+                    анемий, нарушений липидного и углеводного обменов,
+                    гормональный фон, онкомаркеры, генетическая
+                    предрасположенность к заболеваниям и др.)
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-partner">
+        <div class="container">
+          <div class="our-partner__text">
+            <p>Программа проходит в сети клиник</p>
+            <h2>Открытая клиника</h2>
+            <div class="our-partner__adresses">
+              <div class="our-partner__adress">
+                <span>Адрес</span>
+                <span>г. Москва, ул. 1905 года, д. 7 стр. 1</span>
+              </div>
+              <div class="our-partner__adress">
+                <span>Телефон</span>
+                <span>8 (495) 126-14-75</span>
+              </div>
+            </div>
+            <div class="our-partners__connect-whatsup">
+              <div class="our-partners__prev-icon"></div>
+
+              <div class="our-partners__card-header">
+                <img src="images/doctor_small_1.png" alt="" />
+                <img src="images/doctor_small_2.png" alt="" />
+                <span>
+                  Свяжитесь с персональным менеджером для обсуждения всех
+                  интересующих вас вопросов
+                </span>
+              </div>
+              <button class="button button--reversed">
+                <span class="button__title">связаться в whats’app</span>
+                <div class="button__icon" bis_skin_checked="1">
+                  <img src="./images/arrow-up-xs-reverse.svg" alt="" />
+                </div>
+              </button>
+              <div class="our-partners__next-icon"></div>
+            </div>
+          </div>
+          <div class="our-partner__img">
+            <img src="images/open_clinic.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts">
+        <div class="container contacts__container">
+          <h2 class="title-h2-2">КОНТАКТЫ</h2>
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <span class="contacts__title">Бот-поддержка</span>
+              <a href="https://t.me/helplongevity_bot" class="contacts__info"
+                >@helplongevity_bot</a
+              >
+            </div>
+            <div class="contacts__item">
+              <span class="contacts__title">Адрес</span>
+              <span class="contacts__info">Москва, Пресненская наб. 56</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <a
+            href="https://t.me/LongLifeAI_bot"
+            target="_blank"
+            class="button button--primary button--full button--fixed"
+            ><span class="button__title">ИИ-Ассистент</span
+            ><img src="./images/assistant-icon.svg" class="button__icon"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__logo">
+          <a href="./"><img src="./images/logo-inverted.svg" /></a>
+        </div>
+        <nav class="footer__navigation">
+          <div class="footer__navigation-links">
+            <a href="./health-risk-map.html" class="footer__navigation-link"
+              >О карте рисков</a
+            >
+            <a href="./longevity-science.html'" class="footer__navigation-link"
+              >LONGEVITY SCIENCE</a
+            >
+            <a href="./blog.html" class="footer__navigation-link">ВИДЕО-БЛОГ</a>
+          </div>
+          <div class="footer__navigation-links">
+            <a href="./blog.html" class="footer__navigation-link">БЛОГ</a>
+            <a href="./payment-and-return.html" class="footer__navigation-link"
+              >ОПЛАТА и возврат</a
+            >
+            <a href="./faq.html" class="footer__navigation-link">FAQ</a>
+          </div>
+        </nav>
+        <div class="footer__navigation-docs">
+          <a href="./" class="footer__navigation-doc"
+            >Согласие на обработку персональных данных</a
+          >
+          <a href="./" class="footer__navigation-doc">Договор-Оферта</a>
+        </div>
+      </div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
