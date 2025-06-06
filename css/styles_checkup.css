@@ -427,6 +427,12 @@
     color: rgba(37, 25, 60, 0.5019607843);
   }
 }
+@media screen and (max-width: 900px) {
+  .stage-item li p:first-child {
+    font-size: 14px;
+    color: #25193c;
+  }
+}
 .stage-item li.__with_border {
   border-bottom: 1px solid #dfdfdf;
   margin-bottom: 33px;
@@ -1434,6 +1440,7 @@ button.__mobile img {
 @media screen and (max-width: 900px) {
   .our-partners__card-header span {
     flex: 0 0 100%;
+    font-size: 14px;
   }
 }
 .our-partners__card-header img:first-child {

@@ -399,6 +399,12 @@
           color: #25193c80;
         }
       }
+      &:first-child {
+        @media screen and (max-width: 900px) {
+          font-size: 14px;
+          color: #25193c;
+        }
+      }
     }
     &.__with_border {
       border-bottom: 1px solid #dfdfdf;
@@ -1322,6 +1328,7 @@ button.__mobile {
     color: #fff;
     @media screen and (max-width: 900px) {
       flex: 0 0 100%;
+      font-size: 14px;
     }
   }
 
