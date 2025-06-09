@@ -828,14 +828,14 @@
   }
 }
 
-button.__mobile {
+a.__mobile {
   display: none;
 }
-button.__mobile img {
+a.__mobile img {
   width: 12px;
 }
 @media screen and (max-width: 900px) {
-  button.__mobile {
+  a.__mobile {
     display: flex;
     width: 100%;
     margin-top: 15px;
