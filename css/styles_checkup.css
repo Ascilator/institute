@@ -478,13 +478,9 @@
   justify-content: space-between;
   padding: 0 20px 0 25px;
   width: 100%;
-  cursor: pointer;
+  cursor: default;
   transition: background-color 250ms linear;
 }
-.stage-item__button:hover {
-  background: #8f93e3;
-}
-
 .stage-item__title {
   display: flex;
   align-items: center;

@@ -448,10 +448,10 @@
   justify-content: space-between;
   padding: 0 20px 0 25px;
   width: 100%;
-  cursor: pointer;
+  cursor: default;
   transition: background-color 250ms linear;
   &:hover {
-    background: #8f93e3;
+    // background: #8f93e3;
   }
 }
 
